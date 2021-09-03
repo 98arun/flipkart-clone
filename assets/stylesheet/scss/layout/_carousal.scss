@@ -1,0 +1,15 @@
+@use "../base" as *;
+@use "../abstract/mixin" as *;
+
+.carousal {
+  width: 100%;
+  margin-top: 56px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  z-index: -1;
+  &-container {
+    max-width: 1680px;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+}
