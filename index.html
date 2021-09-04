@@ -2,32 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Flipkart clone" />
     <meta name="author" content="Arun Gupta" />
     <meta property="og:title" content="Flipkart" />
-    <link rel="stylesheet" href="./assets/stylesheet/css/main.css">
-    <link rel="icon" href="./assets/images/20150528-140547-favicon-retina.ico">
+    <link rel="stylesheet" href="./assets/stylesheet/css/main.css" />
+    <link rel="icon" href="./assets/images/20150528-140547-favicon-retina.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>
+        Online Shopping Site for Mobiles, Electronics, Furniture, Grocery,
+        Lifestyle, Books & More. Best Offers!
     </title>
-
 </head>
 
 <body>
-    <header>
+    <div id="pop-up" class="login-form ">
+        <div class="login-form-container " id="form">
+            <button id="closeBtn" class="close-btn">✕</button>
+            <div class="left-sidebar">
+                <div>
+                    <h1>Login</h1>
+                    <p>Get access to your Orders, Wishlist and Recommendations</p>
+                </div>
+                <img src="./assets/images/login_image.png" alt="" />
+            </div>
+            <div class="right-sidebar">
+                <div class="right-sidebar-container">
+                    <form action="#">
+                        <input type="text" class="inputbox hidden" name="name" id="name" required />
+                        <label for="name" class="labelbox hidden">Enter Email/Mobile Number</label>
+                        <input type="text" class="inputbox hide" name="name" id="mobile" required />
+                        <label for="name" class="labelbox hide">Enter Mobile Number</label>
+                        <input type="password" class="passbox hidden" name="password" id="pass" required />
+                        <label for="password" class="labelpassbox hidden">Enter Password</label>
+                        <a class="forgot hidden" href="">Forgot?</a>
+                        <p class="tnc"> By continuing, you agree to Flipkart's
+                            <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.
+                        </p>
+                        <button type="submit" class="btn login-btn hidden">Login</button>
+                        <button type="submit" class="btn login-btn hide">Continue</button>
+                        <span class="or hidden">OR</span>
+                        <button class="btn request hidden">Request OTP</button>
+                        <button id="sign-in-btn" class="btn  hide">
+                            Existing user? Log in
+                        </button>
+                    </form>
+                    <a id="signup-link" class="hidden" href="/">New to Flipkart? Create an account</a>
 
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <header>
         <nav>
             <div class="left-nav">
                 <div class="logo">
-                    <img src="./assets/images/fk-plus_3b0baa.png" alt="/">
+                    <img src="./assets/images/fk-plus_3b0baa.png" alt="/" />
                 </div>
                 <div class="search-box">
-                    <input type="search" placeholder="Search for products,brands and more">
+                    <input type="search" placeholder="Search for products,brands and more" />
                     <svg width="20" height="20" viewbox="0 0 17 18" xmlns="http://www.w3.org/2000/svg">
                         <g fill="#2874F1" fill-rule="evenodd">
                             <path class="_34RNph"
@@ -41,11 +80,14 @@
             <div class="right-nav">
                 <div class="hover-btn1">
                     <div class="list-items">
-                        <div class="list-item-text">Login <svg class="svg-rotate" width="4.7" height="8"
-                                viewbox="0 0 16 27" xmlns="http://www.w3.org/2000/svg">
+                        <div class="list-item-text">
+                            Login
+                            <svg class="svg-rotate" width="4.7" height="8" viewbox="0 0 16 27"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff"
                                     class="_2gTTdy" />
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div class="list-item-hover">
                             <div class="svg-triangle">
                                 <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
@@ -59,19 +101,24 @@
                             <ul>
                                 <li>
                                     <div class="dropdown">
-                                        <div class="dropdown-new"><span>New customer?</span> <span class="signup"
-                                                id="sign-up">Sign Up</span></div>
+                                        <div class="dropdown-new">
+                                            <span>New customer?</span>
+                                            <span class="signup" id="sign-up">Sign Up</span>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="dropdown"><i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" viewbox="0 0 16 14">
+                                    <div class="dropdown">
+                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewbox="0 0 16 14">
                                                 <path fill="#2874F1" fill-rule="nonzero"
                                                     d="M7 .333A6.67 6.67 0 0 0 .333 7 6.67 6.67 0 0 0 7 13.667 6.67 6.67 0 0 0 13.667 7 6.67 6.67 0 0 0 7 .333zm0 2c1.107 0 2 .894 2 2 0 1.107-.893 2-2 2s-2-.893-2-2c0-1.106.893-2 2-2zM7 11.8a4.8 4.8 0 0 1-4-2.147C3.02 8.327 5.667 7.6 7 7.6c1.327 0 3.98.727 4 2.053A4.8 4.8 0 0 1 7 11.8z" />
-                                            </svg></i>My Profile</div>
+                                            </svg></i>My Profile
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="dropdown"><i><svg width="16" height="16" viewbox="0 0 20 20"
+                                    <div class="dropdown">
+                                        <i><svg width="16" height="16" viewbox="0 0 20 20"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g fill-rule="evenodd" fill="#2873F0">
                                                     <path
@@ -87,38 +134,46 @@
                                                         d="M4.857 4.754s1.219-2.46 1.747-3.699c.506-1.188 2.4-1.321 3.04-.016.64 1.308.701 1.544.701 1.544s-.482.007-.993.035c-.916.087-1.663 2.702-2.101 4.49 0 0-4.296 1.405-5.513 1.996C.066 9.916 0 10.957 0 10.957l.068-3.4s-.05-.586 1.055-1.043c1.105-.457 3.734-1.76 3.734-1.76"
                                                         mask="url(#h)" transform="translate(0 .143)" />
                                                 </g>
-                                            </svg></i>Flipkart Plus Zone</div>
+                                            </svg></i>Flipkart Plus Zone
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="dropdown"><i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="12" viewbox="0 0 16 12">
+                                    <div class="dropdown">
+                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12"
+                                                viewbox="0 0 16 12">
                                                 <g fill="none" fill-rule="evenodd">
                                                     <path fill="#2874F1"
                                                         d="M6.038 11.682h8.407c.565 0 1.018-.38 1.13-.855V.847H.426v9.98c0 .475.452.855 1.017.855h2.232v-2.98H1.94L4.776 6l2.996 2.703H6.038v2.98z" />
                                                 </g>
-                                            </svg></i>Orders</div>
+                                            </svg></i>Orders
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="dropdown"><i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="14" viewbox="0 0 20 16">
+                                    <div class="dropdown">
+                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                                                viewbox="0 0 20 16">
                                                 <path
                                                     d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
                                                     fill="#2874F0" class="" stroke="#FFF" fill-rule="evenodd"
                                                     opacity=".9" />
-                                            </svg></i>Wishlist</div>
+                                            </svg></i>Wishlist
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="dropdown"><i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" viewbox="0 0 16 16">
+                                    <div class="dropdown">
+                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewbox="0 0 16 16">
                                                 <g fill="none" fill-rule="evenodd">
                                                     <path fill="#FFF" d="M0 0h16v16H0z" />
                                                     <path fill="#2874F0"
                                                         d="M16 9.25v2.5c0 .69-.597 1.25-1.333 1.25H1.333C.597 13 0 12.44 0 11.75v-2.5c.736 0 1.333-.56 1.333-1.25S.736 6.75 0 6.75v-2.5C0 3.56.597 3 1.333 3h13.334C15.403 3 16 3.56 16 4.25v2.5c-.736 0-1.333.56-1.333 1.25S15.264 9.25 16 9.25zM4.4 3.625v1.25h.533v-1.25H4.4zm0 2.5v1.25h.533v-1.25H4.4zm0 2.5v1.25h.533v-1.25H4.4zm0 2.5v1.25h.533v-1.25H4.4z" />
                                                 </g>
-                                            </svg></i>Rewards</div>
+                                            </svg></i>Rewards
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="dropdown"><i><svg width="16" height="16" viewbox="0 0 23 22"
+                                    <div class="dropdown">
+                                        <i><svg width="16" height="16" viewbox="0 0 23 22"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <g fill="none" fill-rule="evenodd" transform="translate(-9.694 -9)">
                                                     <ellipse cx="20.557" cy="20" rx="20.557" ry="20" />
@@ -126,7 +181,8 @@
                                                     <path fill="#2874F0" fill-rule="nonzero"
                                                         d="M31.5 27v1.167a2.34 2.34 0 0 1-2.333 2.333H12.833a2.333 2.333 0 0 1-2.333-2.333V11.833A2.333 2.333 0 0 1 12.833 9.5h16.334a2.34 2.34 0 0 1 2.333 2.333V13H21a2.333 2.333 0 0 0-2.333 2.333v9.334A2.333 2.333 0 0 0 21 27h10.5zM21 24.667h11.667v-9.334H21v9.334zm4.667-2.917c-.97 0-1.75-.782-1.75-1.75s.78-1.75 1.75-1.75c.968 0 1.75.782 1.75 1.75s-.782 1.75-1.75 1.75z" />
                                                 </g>
-                                            </svg></i>Gift Cards</div>
+                                            </svg></i>Gift Cards
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -134,11 +190,14 @@
                 </div>
                 <div class="hover-btn2">
                     <div class="list-items">
-                        <div class="list-item-text ">More <svg class="svg-rotate" width="4.7" height="8"
-                                viewbox="0 0 16 27" xmlns="http://www.w3.org/2000/svg">
+                        <div class="list-item-text">
+                            More
+                            <svg class="svg-rotate" width="4.7" height="8" viewbox="0 0 16 27"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff"
                                     class="_2gTTdy" />
-                            </svg></div>
+                            </svg>
+                        </div>
                         <div class="list-item-hover">
                             <div class="svg-triangle">
                                 <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
@@ -151,53 +210,63 @@
                             </div>
                             <ul>
                                 <li>
-                                    <div class="dropdown"><i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="14" viewbox="0 0 12 14">
+                                    <div class="dropdown">
+                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                                                viewbox="0 0 12 14">
                                                 <g fill="none" fill-rule="evenodd">
                                                     <path d="M-4-3h20v20H-4z" />
                                                     <path fill="#2874F1"
                                                         d="M6.17 13.61c-1.183 0-1.922-.723-1.922-1.88H8.09c0 1.157-.74 1.88-1.92 1.88zm4.222-5.028l1.465 1.104v1.07H0v-1.07l1.464-1.104v-2.31h.004c.035-2.54 1.33-4.248 3.447-4.652V.992C4.915.446 5.37 0 5.928 0c.558 0 1.014.446 1.014.992v.628c2.118.404 3.412 2.112 3.446 4.65h.004v2.312z" />
                                                 </g>
-                                            </svg></i>Notifications preferences</div>
+                                            </svg></i>Notifications preferences
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="dropdown"><i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="12" viewbox="0 0 16 14">
+                                    <div class="dropdown">
+                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12"
+                                                viewbox="0 0 16 14">
                                                 <g fill="none" fill-rule="evenodd">
                                                     <path
                                                         d="M-2-3h20v20H-2V-3zm8.333 4.167h3.334v1.666H6.333V1.167zm0 0h3.334v1.666H6.333V1.167z" />
                                                     <path fill="#2874F0" fill-rule="nonzero"
                                                         d="M6.467 10.067V9.3h-5.36L1.1 12.367c0 .85.682 1.533 1.533 1.533h10.734c.85 0 1.533-.682 1.533-1.533V9.3H9.533v.767H6.467zm7.666-6.9H11.06V1.633L9.526.1H6.459L4.926 1.633v1.534h-3.06c-.843 0-1.533.69-1.533 1.533V7c0 .851.683 1.533 1.534 1.533h4.6V7h3.066v1.533h4.6c.844 0 1.534-.69 1.534-1.533V4.7c0-.843-.69-1.533-1.534-1.533zm-4.6 0H6.467V1.633h3.066v1.534z" />
                                                 </g>
-                                            </svg></i>Sell on Flipkart</div>
+                                            </svg></i>Sell on Flipkart
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="dropdown"><i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" viewbox="0 0 14 17">
+                                    <div class="dropdown">
+                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewbox="0 0 14 17">
                                                 <g fill="none" fill-rule="evenodd">
                                                     <path fill="#2874F0" fill-rule="nonzero"
                                                         d="M12.25.542H1.75c-.833 0-1.5.675-1.5 1.5v10.5c0 .825.667 1.5 1.5 1.5h3L7 16.292l2.25-2.25h3c.825 0 1.5-.675 1.5-1.5v-10.5c0-.825-.675-1.5-1.5-1.5zm-4.5 12h-1.5v-1.5h1.5v1.5zM9.303 6.73l-.676.69c-.54.547-.877.997-.877 2.122h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.646.443-1.058 0-.825-.675-1.5-1.5-1.5s-1.5.675-1.5 1.5H4c0-1.658 1.342-3 3-3s3 1.342 3 3c0 .66-.27 1.26-.697 1.687z" />
                                                 </g>
-                                            </svg></i>24x7 Customer Care</div>
+                                            </svg></i>24x7 Customer Care
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="dropdown"><i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="14" viewbox="0 0 18 10">
+                                    <div class="dropdown">
+                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                                                viewbox="0 0 18 10">
                                                 <g fill="none" fill-rule="evenodd">
                                                     <path fill="#2874F0" fill-rule="nonzero"
                                                         d="M12.333 0l1.91 1.908-4.068 4.067-3.333-3.333L.667 8.825 1.842 10l5-5 3.333 3.333 5.25-5.24L17.333 5V0" />
                                                 </g>
-                                            </svg></i>Advertise</div>
+                                            </svg></i>Advertise
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="dropdown"><i><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="14" viewbox="0 0 12 14">
+                                    <div class="dropdown">
+                                        <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                                                viewbox="0 0 12 14">
                                                 <g fill="none" fill-rule="evenodd">
                                                     <path d="M-4-3h20v20H-4z" />
                                                     <path fill="#2874F0" fill-rule="nonzero"
                                                         d="M12 4.94H8.57V0H3.43v4.94H0l6 5.766 6-5.765zM0 12.354V14h12v-1.647H0z" />
                                                 </g>
-                                            </svg></i>Download App</div>
+                                            </svg></i>Download App
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -218,73 +287,601 @@
         <div class="categories-container">
             <div class="categories-container-list">
                 <div class="categories-container-list-items">
-                    <img src="./assets/images/f15c02bfeb02d15d.png" alt="/">
+                    <img src="./assets/images/f15c02bfeb02d15d.png" alt="/" />
                     <span>Top Offers</span>
                 </div>
                 <div class="categories-container-list-items">
-                    <img src="./assets/images/29327f40e9c4d26b.png" alt="/">
+                    <img src="./assets/images/29327f40e9c4d26b.png" alt="/" />
                     <span>Grocery</span>
                 </div>
                 <div class="categories-container-list-items">
-                    <img src="./assets/images/22fddf3c7da4c4f4.png" alt="/">
+                    <img src="./assets/images/22fddf3c7da4c4f4.png" alt="/" />
                     <span>Mobiles</span>
                 </div>
                 <div class="categories-container-list-items">
-                    <img src="./assets/images/82b3ca5fb2301045.png" alt="/">
+                    <img src="./assets/images/82b3ca5fb2301045.png" alt="/" />
                     <span>Fashion<svg class="svg-rotate" width="4.7" height="8" viewbox="0 0 16 27"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000"
                                 class="_2gTTdy" />
                         </svg></span>
-
+                    <div class="list-item-hover parent">
+                        <div class="svg-triangle">
+                            <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
+                                <g>
+                                    <path
+                                        d="M12.538 6.478c-.14-.146-.335-.228-.538-.228s-.396.082-.538.228l-9.252 9.53c-.21.217-.27.538-.152.815.117.277.39.458.69.458h18.5c.302 0 .573-.18.69-.457.118-.277.058-.598-.152-.814l-9.248-9.532z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <ul>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's Top Wear
+                                </div>
+                                <div class="list-item-hover nested">
+                                    <div class="svg-triangle">
+                                        <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
+                                            <g>
+                                                <path
+                                                    d="M12.538 6.478c-.14-.146-.335-.228-.538-.228s-.396.082-.538.228l-9.252 9.53c-.21.217-.27.538-.152.815.117.277.39.458.69.458h18.5c.302 0 .573-.18.69-.457.118-.277.058-.598-.152-.814l-9.248-9.532z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's Top Wear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's bottom Wear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Women Ethnic
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Women Western
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's Footwear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Watches and Accessories
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Kids
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Winter
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's bottom Wear
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Women Ethnic
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Women Western
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's Footwear
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Watches and Accessories
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Kids
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Winter
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="categories-container-list-items">
-                    <img src="./assets/images/69c6589653afdb9a.png" alt="/">
+                    <img src="./assets/images/69c6589653afdb9a.png" alt="/" />
                     <span>Electronics<svg class="svg-rotate" width="4.7" height="8" viewbox="0 0 16 27"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000"
                                 class="_2gTTdy" />
                         </svg></span>
+                    <div class="list-item-hover  parent">
+                        <div class="svg-triangle">
+                            <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
+                                <g>
+                                    <path
+                                        d="M12.538 6.478c-.14-.146-.335-.228-.538-.228s-.396.082-.538.228l-9.252 9.53c-.21.217-.27.538-.152.815.117.277.39.458.69.458h18.5c.302 0 .573-.18.69-.457.118-.277.058-.598-.152-.814l-9.248-9.532z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <ul>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's Top Wear
+                                </div>
+                                <div class="list-item-hover nested">
+                                    <div class="svg-triangle">
+                                        <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
+                                            <g>
+                                                <path
+                                                    d="M12.538 6.478c-.14-.146-.335-.228-.538-.228s-.396.082-.538.228l-9.252 9.53c-.21.217-.27.538-.152.815.117.277.39.458.69.458h18.5c.302 0 .573-.18.69-.457.118-.277.058-.598-.152-.814l-9.248-9.532z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's Top Wear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's bottom Wear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Women Ethnic
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Women Western
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's Footwear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Watches and Accessories
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Kids
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Winter
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's bottom Wear
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Women Ethnic
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Women Western
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's Footwear
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Watches and Accessories
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Kids
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Winter
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="categories-container-list-items">
-                    <img src="./assets/images/ab7e2b022a4587dd.jpg" alt="/">
+                    <img src="./assets/images/ab7e2b022a4587dd.jpg" alt="/" />
                     <span>Home<svg class="svg-rotate" width="4.7" height="8" viewbox="0 0 16 27"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000"
                                 class="_2gTTdy" />
                         </svg></span>
+                    <div class="list-item-hover  parent">
+                        <div class="svg-triangle">
+                            <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
+                                <g>
+                                    <path
+                                        d="M12.538 6.478c-.14-.146-.335-.228-.538-.228s-.396.082-.538.228l-9.252 9.53c-.21.217-.27.538-.152.815.117.277.39.458.69.458h18.5c.302 0 .573-.18.69-.457.118-.277.058-.598-.152-.814l-9.248-9.532z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <ul>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's Top Wear
+                                </div>
+                                <div class="list-item-hover nested">
+                                    <div class="svg-triangle">
+                                        <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
+                                            <g>
+                                                <path
+                                                    d="M12.538 6.478c-.14-.146-.335-.228-.538-.228s-.396.082-.538.228l-9.252 9.53c-.21.217-.27.538-.152.815.117.277.39.458.69.458h18.5c.302 0 .573-.18.69-.457.118-.277.058-.598-.152-.814l-9.248-9.532z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's Top Wear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's bottom Wear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Women Ethnic
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Women Western
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's Footwear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Watches and Accessories
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Kids
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Winter
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's bottom Wear
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Women Ethnic
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Women Western
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's Footwear
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Watches and Accessories
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Kids
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Winter
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="categories-container-list-items">
-                    <img src="./assets/images/0ff199d1bd27eb98.png" alt="/">
+                    <img src="./assets/images/0ff199d1bd27eb98.png" alt="/" />
                     <span>Appliances<svg class="svg-rotate" width="4.7" height="8" viewbox="0 0 16 27"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000"
                                 class="_2gTTdy" />
                         </svg></span>
+                    <div class="list-item-hover  parent">
+                        <div class="svg-triangle">
+                            <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
+                                <g>
+                                    <path
+                                        d="M12.538 6.478c-.14-.146-.335-.228-.538-.228s-.396.082-.538.228l-9.252 9.53c-.21.217-.27.538-.152.815.117.277.39.458.69.458h18.5c.302 0 .573-.18.69-.457.118-.277.058-.598-.152-.814l-9.248-9.532z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <ul>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's Top Wear
+                                </div>
+                                <div class="list-item-hover nested">
+                                    <div class="svg-triangle">
+                                        <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
+                                            <g>
+                                                <path
+                                                    d="M12.538 6.478c-.14-.146-.335-.228-.538-.228s-.396.082-.538.228l-9.252 9.53c-.21.217-.27.538-.152.815.117.277.39.458.69.458h18.5c.302 0 .573-.18.69-.457.118-.277.058-.598-.152-.814l-9.248-9.532z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's Top Wear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's bottom Wear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Women Ethnic
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Women Western
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's Footwear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Watches and Accessories
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Kids
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Winter
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's bottom Wear
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Women Ethnic
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Women Western
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's Footwear
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Watches and Accessories
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Kids
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Winter
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="categories-container-list-items">
-                    <img src="./assets/images/71050627a56b4693.png" alt="/">
+                    <img src="./assets/images/71050627a56b4693.png" alt="/" />
                     <span>Travel</span>
                 </div>
                 <div class="categories-container-list-items">
-                    <img src="./assets/images/dff3f7adcf3a90c6.png" alt="/">
+                    <img src="./assets/images/dff3f7adcf3a90c6.png" alt="/" />
                     <span>Beauty,Toysand more<svg class="svg-rotate" width="4.7" height="8" viewbox="0 0 16 27"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#000"
                                 class="_2gTTdy" />
                         </svg></span>
+                    <div class="list-item-hover  parent">
+                        <div class="svg-triangle">
+                            <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
+                                <g>
+                                    <path
+                                        d="M12.538 6.478c-.14-.146-.335-.228-.538-.228s-.396.082-.538.228l-9.252 9.53c-.21.217-.27.538-.152.815.117.277.39.458.69.458h18.5c.302 0 .573-.18.69-.457.118-.277.058-.598-.152-.814l-9.248-9.532z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <ul>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's Top Wear
+                                </div>
+                                <div class="list-item-hover nested">
+                                    <div class="svg-triangle">
+                                        <svg class="svg-arrow" viewbox="0 0 24 24" aria-hidden="true">
+                                            <g>
+                                                <path
+                                                    d="M12.538 6.478c-.14-.146-.335-.228-.538-.228s-.396.082-.538.228l-9.252 9.53c-.21.217-.27.538-.152.815.117.277.39.458.69.458h18.5c.302 0 .573-.18.69-.457.118-.277.058-.598-.152-.814l-9.248-9.532z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <ul>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's Top Wear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's bottom Wear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Women Ethnic
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Women Western
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Men's Footwear
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Watches and Accessories
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Kids
+                                            </div>
+                                        </li>
+                                        <li class="blue">
+                                            <div class="dropdown">
+                                                Winter
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's bottom Wear
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Women Ethnic
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Women Western
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Men's Footwear
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Watches and Accessories
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Kids
+                                </div>
+                            </li>
+                            <li class="blue">
+                                <div class="dropdown">
+                                    Winter
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
     <section class="carousal">
         <div class="carousal-container">
             <div class="carousal-container-slider">
-                <img src="./assets/images/1.jpg" alt="image">
-                <img src="./assets/images/2.jpg" alt="image">
-                <img src="./assets/images/3.jpg" alt="image">
-                <img src="./assets/images/4.jpg" alt="image">
+                <img src="./assets/images/1.jpg" alt="image" />
+                <img src="./assets/images/2.jpg" alt="image" />
+                <img src="./assets/images/3.jpg" alt="image" />
+                <img src="./assets/images/4.jpg" alt="image" />
             </div>
         </div>
         <div class="main-card-container">
@@ -293,8 +890,7 @@
                     <div class="main-card-container-first-left-upper">
                         <div class="main-card-container-first-left-upper-content">
                             <h4>Super Saver Deals Of The Day</h4>
-                            <p>Deals Refresh Every 24 Hours
-                            </p>
+                            <p>Deals Refresh Every 24 Hours</p>
                         </div>
                         <div class="main-card-container-first-left-upper-btn">
                             VIEW ALL
@@ -303,480 +899,459 @@
                     <div class="main-card-container-first-left-lower">
                         <div class="main-card-container-first-left-lower-items">
                             <img src="./assets/images/8-908988-007nike-nike-black-volt-anthracite-white-original-imag3hgtmzxbyxwy.jpeg"
-                                alt="/">
+                                alt="/" />
                             <h4>Best Selling Footwear</h4>
                             <p>Under ₹999</p>
                             <span>Casual Shoes, Sneakers...</span>
                         </div>
                         <div class="main-card-container-first-left-lower-items">
-                            <img src="./assets/images/a.jpg" alt="/">
+                            <img src="./assets/images/a.jpg" alt="/" />
                             <h4>Puma, ADIDAS,HRX...</h4>
                             <p>Under ₹999</p>
                             <span>Casual Shoes, Sneakers...</span>
                         </div>
                         <div class="main-card-container-first-left-lower-items">
-                            <img src="./assets/images/b.jpg" alt="/">
+                            <img src="./assets/images/b.jpg" alt="/" />
                             <h4>Jewellery</h4>
                             <p>Under ₹999</p>
                             <span>Casual Shoes, Sneakers...</span>
                         </div>
                         <div class="main-card-container-first-left-lower-items">
-                            <img src="./assets/images/c.jpg" alt="/">
+                            <img src="./assets/images/c.jpg" alt="/" />
                             <h4>Kids</h4>
                             <p>Under ₹999</p>
                             <span>Casual Shoes, Sneakers...</span>
                         </div>
                         <div class="main-card-container-first-left-lower-items">
-                            <img src="./assets/images/d.jpeg" alt="/">
+                            <img src="./assets/images/d.jpeg" alt="/" />
                             <h4>Sarees</h4>
                             <p>Under ₹999</p>
                             <span>Casual Shoes, Sneakers...</span>
                         </div>
                         <div class="main-card-container-first-left-lower-items">
-                            <img src="./assets/images/e.jpeg" alt="/">
+                            <img src="./assets/images/e.jpeg" alt="/" />
                             <h4>Kurtas & Kurtis</h4>
                             <p>Under ₹999</p>
                             <span>Casual Shoes, Sneakers...</span>
                         </div>
                         <div class="main-card-container-first-left-lower-items">
-                            <img src="../assets/images/f.jpeg" alt="/">
+                            <img src="../assets/images/f.jpeg" alt="/" />
                             <h4>Grooming Essentials</h4>
                             <p>Under ₹999</p>
                             <span>Casual Shoes, Sneakers...</span>
                         </div>
-
                     </div>
                 </div>
                 <div class="main-card-container-first-right">
-                    <img src="./assets/images/a33323ee3a5b0bc5.jpg" alt="/">
+                    <img src="./assets/images/a33323ee3a5b0bc5.jpg" alt="/" />
                 </div>
             </div>
             <div class="product-container">
-                <img src="./assets/images/x.jpg" alt="/">
-                <img src="./assets/images/y.jpg" alt="/">
-                <img src="./assets/images/z.jpg" alt="/">
+                <img src="./assets/images/x.jpg" alt="/" />
+                <img src="./assets/images/y.jpg" alt="/" />
+                <img src="./assets/images/z.jpg" alt="/" />
             </div>
             <div class="main-card-container-first-left">
                 <div class="main-card-container-first-left-upper">
                     <div class="main-card-container-first-left-upper-content">
                         <h4>Today's Fashion Deals</h4>
-
                     </div>
-                    <div class="main-card-container-first-left-upper-btn">
-                        VIEW ALL
-                    </div>
+                    <div class="main-card-container-first-left-upper-btn">VIEW ALL</div>
                 </div>
                 <div class="main-card-container-first-left-lower">
                     <div class="main-card-container-first-left-lower-items">
                         <img src="./assets/images/8-908988-007nike-nike-black-volt-anthracite-white-original-imag3hgtmzxbyxwy.jpeg"
-                            alt="/">
+                            alt="/" />
                         <h4>Best Selling Footwear</h4>
                         <p>Under ₹999</p>
                         <span>Casual Shoes, Sneakers...</span>
                     </div>
                     <div class="main-card-container-first-left-lower-items">
-                        <img src="./assets/images/a.jpg" alt="/">
+                        <img src="./assets/images/a.jpg" alt="/" />
                         <h4>Puma, ADIDAS,HRX...</h4>
                         <p>Under ₹999</p>
                         <span>Casual Shoes, Sneakers...</span>
                     </div>
                     <div class="main-card-container-first-left-lower-items">
-                        <img src="./assets/images/b.jpg" alt="/">
+                        <img src="./assets/images/b.jpg" alt="/" />
                         <h4>Jewellery</h4>
                         <p>Under ₹999</p>
                         <span>Casual Shoes, Sneakers...</span>
                     </div>
                     <div class="main-card-container-first-left-lower-items">
-                        <img src="./assets/images/c.jpg" alt="/">
+                        <img src="./assets/images/c.jpg" alt="/" />
                         <h4>Kids</h4>
                         <p>Under ₹999</p>
                         <span>Casual Shoes, Sneakers...</span>
                     </div>
                     <div class="main-card-container-first-left-lower-items">
-                        <img src="./assets/images/d.jpeg" alt="/">
+                        <img src="./assets/images/d.jpeg" alt="/" />
                         <h4>Sarees</h4>
                         <p>Under ₹999</p>
                         <span>Casual Shoes, Sneakers...</span>
                     </div>
                     <div class="main-card-container-first-left-lower-items">
-                        <img src="./assets/images/e.jpeg" alt="/">
+                        <img src="./assets/images/e.jpeg" alt="/" />
                         <h4>Kurtas & Kurtis</h4>
                         <p>Under ₹999</p>
                         <span>Casual Shoes, Sneakers...</span>
                     </div>
                     <div class="main-card-container-first-left-lower-items">
-                        <img src="../assets/images/f.jpeg" alt="/">
+                        <img src="../assets/images/f.jpeg" alt="/" />
                         <h4>Grooming Essentials</h4>
                         <p>Under ₹999</p>
                         <span>Casual Shoes, Sneakers...</span>
                     </div>
                     <div class="main-card-container-first-left-lower-items">
-                        <img src="../assets/images/g.jpeg" alt="/">
+                        <img src="../assets/images/g.jpeg" alt="/" />
                         <h4>Bean Bags</h4>
                         <p>Under ₹999</p>
                         <span>Casual Shoes, Sneakers...</span>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
     <section class="description">
         <div class="story">
-            <div class="top">
-                Top Stories: <span>Brand Directory</span>
+            <div class="top">Top Stories: <span>Brand Directory</span></div>
+            <div class="link">
+                MOST SEARCHED FOR ON FLIPKART:
+                <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
+                    Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
+                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV
+                    & Appliance |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig | Sunglasses</span>
             </div>
             <div class="link">
-                MOST SEARCHED FOR ON FLIPKART: <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
+                MOBILES:
+                <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
                     Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |
-                    Sunglasses</span>
+                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV
+                    & Appliance |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig | Sunglasses</span>
             </div>
             <div class="link">
-                MOBILES: <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
+                CAMARA:
+                <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
                     Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |
-                    Sunglasses</span>
+                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV
+                    & Appliance |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig | Sunglasses</span>
             </div>
             <div class="link">
-                CAMARA: <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
+                LAPTOPS:
+                <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
                     Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |
-                    Sunglasses</span>
+                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV
+                    & Appliance |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig | Sunglasses</span>
             </div>
             <div class="link">
-                LAPTOPS: <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
+                TVS:
+                <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
                     Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |
-                    Sunglasses</span>
+                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV
+                    & Appliance |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig | Sunglasses</span>
             </div>
             <div class="link">
-                TVS: <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
+                LARGE APPLIANCES:
+                <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
                     Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |
-                    Sunglasses</span>
+                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV
+                    & Appliance |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig | Sunglasses</span>
             </div>
             <div class="link">
-                LARGE APPLIANCES: <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
+                CLOTHING:
+                <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
                     Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |
-                    Sunglasses</span>
+                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV
+                    & Appliance |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig | Sunglasses</span>
             </div>
             <div class="link">
-                CLOTHING: <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
+                FOOTWARE:
+                <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
                     Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |
-                    Sunglasses</span>
+                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV
+                    & Appliance |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig | Sunglasses</span>
             </div>
             <div class="link">
-                FOOTWARE: <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
+                GROCERIES:
+                <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
                     Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |
-                    Sunglasses</span>
+                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV
+                    & Appliance |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig | Sunglasses</span>
             </div>
             <div class="link">
-                GROCERIES: <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
+                BEST SELLING ON FLIPKART:
+                <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
                     Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |
-                    Sunglasses</span>
-            </div>
-            <div class="link">
-                BEST SELLING ON FLIPKART: <span>TV & Appliance |Super Saver Days|Flipkart Motor Vehicle
-                    Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance |Super Saver
-                    Days|Flipkart Motor Vehicle Insurance|Rakhi 2021|Flipkart QuickTV & Appliances| Shop From
-                    Home|
-                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |
-                    Sunglasses</span>
+                    DaysGrand| Home Appliances| SaleFlipkart| Super Cooling DaysBig |TV
+                    & Appliance |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig |TV & Appliance
+                    |Super Saver Days|Flipkart Motor Vehicle Insurance|Rakhi
+                    2021|Flipkart QuickTV & Appliances| Shop From Home| DaysGrand| Home
+                    Appliances| SaleFlipkart| Super Cooling DaysBig | Sunglasses</span>
             </div>
             <div class="headings">
-                <h1>Flipkart: The One-stop Shopping Destination</h1>E-commerce is revolutionizing the way we all shop in
-                India. Why
-                do you want to hop from one store to another in search of the latest phone when you can find it on the
-                Internet in a
-                single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending
-                electronics like
-                laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing
-                and lifestyle
-                accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make
-                your life
-                easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small
-                appliances; from
-                home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got
-                them all
-                covered. You name it, and you can stay assured about finding them all here. For those of you with
-                erratic working
-                hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This
-                e-commerce
-                never shuts down. <br><br>What's more, with our year-round shopping festivals and events, our prices are
-                irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are
-                wondering why
-                you should shop from Flipkart when there are multiple options available to you, well, the below will
-                answer your
-                question. <br><br>
-                <h2>Flipkart Plus</h2>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a
-                loyalty
-                reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins
-                to be a part
-                of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp;
-                non-plus
-                members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange
-                offers and
-                priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you
-                shop more!
-                <br><br>What's more, you can even use the Flipkart supercoins for a number of exciting services,
-                like:<br>An annual
-                Zomato Gold membership<br>An annual Hotstar Premium membership<br>6 months Gaana plus
-                subscription<br>Rupees 550
-                instant discount on flights on ixigo<br>Check out https://www.flipkart.com/plus/all-offers for the
-                entire list.
-                Terms and conditions apply.<br><br>
-                <h2>No Cost EMI</h2>In an attempt to make high-end products accessible to all, our No Cost EMI plan
-                enables you to
-                shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops,
-                large and
-                small appliances, furniture, electronics and watches, you can now shop without burning a hole in your
-                pocket. If
-                you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look
-                ASAP! Terms
-                and conditions apply.<br><br>
-                <h2>EMI on Debit Cards</h2>Did you know debit card holders account for 79.38 crore in the country, while
-                there are
-                only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make
-                online shopping
-                accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with
-                us without
-                having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC
-                Bank, State
-                Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions
-                apply. <br><br>
-                <h2>Mobile Exchange Offers</h2>Get an instant discount on the phone that you have been eyeing on.
-                Exchange your old
-                mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in
-                a working
-                condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the
-                'Buy with
-                Exchange' option on the product description of the phone. So, be smart, always opt for an exchange
-                wherever
-                possible. Terms and conditions apply. <br><br>
+                <h1>Flipkart: The One-stop Shopping Destination</h1>
+                E-commerce is revolutionizing the way we all shop in India. Why do you
+                want to hop from one store to another in search of the latest phone
+                when you can find it on the Internet in a single click? Not only
+                mobiles. Flipkart houses everything you can possibly imagine, from
+                trending electronics like laptops, tablets, smartphones, and mobile
+                accessories to in-vogue fashion staples like shoes, clothing and
+                lifestyle accessories; from modern furniture like sofa sets, dining
+                tables, and wardrobes to appliances that make your life easy like
+                washing machines, TVs, ACs, mixer grinder juicers and other
+                time-saving kitchen and small appliances; from home furnishings like
+                cushion covers, mattresses and bedsheets to toys and musical
+                instruments, we got them all covered. You name it, and you can stay
+                assured about finding them all here. For those of you with erratic
+                working hours, Flipkart is your best bet. Shop in your PJs, at night
+                or in the wee hours of the morning. This e-commerce never shuts down.
+                <br /><br />What's more, with our year-round shopping festivals and
+                events, our prices are irresistible. We're sure you'll find yourself
+                picking up more than what you had in mind. If you are wondering why
+                you should shop from Flipkart when there are multiple options
+                available to you, well, the below will answer your question.
+                <br /><br />
+                <h2>Flipkart Plus</h2>
+                A world of limitless possibilities awaits you - Flipkart Plus was
+                kickstarted as a loyalty reward programme for all its regular
+                customers at zero subscription fee. All you need is 500 supercoins to
+                be a part of this service. For every 100 rupees spent on Flipkart
+                order, Plus members earns 4 supercoins &amp; non-plus members earn 2
+                supercoins. Free delivery, early access during sales and shopping
+                festivals, exchange offers and priority customer service are the top
+                benefits to a Flipkart Plus member. In short, earn more when you shop
+                more! <br /><br />What's more, you can even use the Flipkart
+                supercoins for a number of exciting services, like:<br />An annual
+                Zomato Gold membership<br />An annual Hotstar Premium membership<br />6
+                months Gaana plus subscription<br />Rupees 550 instant discount on
+                flights on ixigo<br />Check out
+                https://www.flipkart.com/plus/all-offers for the entire list. Terms
+                and conditions apply.<br /><br />
+                <h2>No Cost EMI</h2>
+                In an attempt to make high-end products accessible to all, our No Cost
+                EMI plan enables you to shop with us under EMI, without shelling out
+                any processing fee. Applicable on select mobiles, laptops, large and
+                small appliances, furniture, electronics and watches, you can now shop
+                without burning a hole in your pocket. If you've been eyeing a product
+                for a long time, chances are it may be up for a no cost EMI. Take a
+                look ASAP! Terms and conditions apply.<br /><br />
+                <h2>EMI on Debit Cards</h2>
+                Did you know debit card holders account for 79.38 crore in the
+                country, while there are only 3.14 crore credit card holders? After
+                enabling EMI on Credit Cards, in another attempt to make online
+                shopping accessible to everyone, Flipkart introduces EMI on Debit
+                Cards, empowering you to shop confidently with us without having to
+                worry about pauses in monthly cash flow. At present, we have partnered
+                with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this
+                facility. More power to all our shoppers! Terms and conditions apply.
+                <br /><br />
+                <h2>Mobile Exchange Offers</h2>
+                Get an instant discount on the phone that you have been eyeing on.
+                Exchange your old mobile for a new one after the Flipkart experts
+                calculate the value of your old phone, provided it is in a working
+                condition without damage to the screen. If a phone is applicable for
+                an exchange offer, you will see the 'Buy with Exchange' option on the
+                product description of the phone. So, be smart, always opt for an
+                exchange wherever possible. Terms and conditions apply. <br /><br />
                 <h2>What Can You Buy From Flipkart?</h2>
-                <h2>Mobile Phones</h2>From budget phones to state-of-the-art smartphones, we have a mobile for everybody
-                out there.
-                Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors,
-                beautification
-                apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop
-                from top
-                brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest
-                assured, you're
-                buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile
-                Protection
-                Plan, you will never again find the need to run around service centres. This plan entails you to a
-                number of
-                post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone,
-                hardware and
-                software glitches, and replacements - <b>the Flipkart Complete Mobile Protection</b> covers a
-                comprehensive range of
-                post-purchase problems, with door-to-door services. <br><br>
-                <h2>Electronic Devices and Accessories</h2>When it comes to laptops, we are not far behind. Filter among
-                dozens of
-                super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias
-                for
-                personalized results in a flash. All you students out there, confused about what laptop to get? Our
-                <b>Back To
-                    College Store</b> segregates laptops purpose wise (gaming, browsing and research, project work,
-                entertainment,
-                design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping
-                experience
-                that is quicker and simpler.<br><br>Photography lovers, you couldn't land at a better page than ours.
-                Cutting-edge
-                DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action
-                cameras for
-                adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon,
-                Nikon, GoPro,
-                Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at
-                a better
-                page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite
-                instant
-                cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is
-                for
-                professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store.
-                <br><br>Turn
-                your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony
-                home
-                theatres, JBL soundbars and Philips tower speakers for an experience to remember.<br><br>How about
-                jazzing up your
-                phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from
-                headphones, power
-                banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you
-                and your
-                phone; never again worry about running out of charge or memory on your next vacation.<br><br>
-                <h2>Large Appliances</h2>Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing
-                machines -
-                discover everything you need to run a house under one roof. Our <b>Dependable TV and Appliance Store</b>
-                ensures
-                zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as
-                per your
-                convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) -
-                rest assured,
-                value for money is what is promised and delivered. Shop from market leaders in the country like Samsung,
-                LG,
-                Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others. <br><br>
-                <h2>Small Home Appliances</h2>Find handy and practical home appliances designed to make your life
-                simpler: electric
-                kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other
-                time-saving
-                appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at
-                home.<br><br>
-                <h2>Lifestyle</h2>Flipkart, <b>'India ka Fashion Capital'</b>, is your one-stop fashion destination for
-                anything and
-                everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter
-                clothing,
-                formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and
-                accessories
-                are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow,
-                Woodland,
-                Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple
-                maxi dresses,
-                no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on
-                us for a
-                wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a
-                few, for
-                carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals,
-                office
-                get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.<br><br>
-                <h2>Home and Furniture</h2>Moving to a new place is never easy, especially if you're buying new
-                furniture. Beds,
-                sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the
-                hundreds of
-                options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand
-                the test of
-                time? These are questions you must ask before you choose a store. Well, our <b>Durability Certified
-                    Furniture
-                    Store</b> has not only curated a range of furniture keeping in mind the modern Indian consumer but
-                furniture
-                that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture
-                has gone
-                through 35 stability and load tests so that you receive only the best-quality furniture. <b>Be
-                    FurniSure</b>,
-                always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect
-                Homes.
-                <br><br>You may have your furniture all set up, but they could end up looking flat and incomplete
-                without
-                complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find
-                everything
-                that turns a house to an inviting home under one roof at Flipkart. <br><br>
-                <h2>Baby and Kids</h2>Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if
-                you're an
-                expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting
-                journey with
-                the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us
-                without a
-                second thought. Huggies, Pampers, MamyPoko, and Johnson &amp; Johnson: we host only the most-trusted
-                names in the
-                business for your baby.<br><br>
-                <h2>Books, Sports and Games</h2>Work hard and no play? We don't believe in that. Get access to
-                best-selling fiction
-                and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted
-                gaming
-                consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get
-                moving.
-                <br><br>
-                <h2>Grocery/Supermart</h2>Launching into the grocery vertical, Flipkart introduces <b>Supermart</b> that
-                is out to
-                bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care,
-                breakfast
-                essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present
-                everything
-                you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our <b>1 Rupee Store</b>
-                presents new
-                products every day for a nominal price of 1 Rupee only. Terms and conditions apply.
+                <h2>Mobile Phones</h2>
+                From budget phones to state-of-the-art smartphones, we have a mobile
+                for everybody out there. Whether you're looking for larger, fuller
+                screens, power-packed batteries, blazing-fast processors,
+                beautification apps, high-tech selfie cameras or just large internal
+                space, we take care of all the essentials. Shop from top brands in the
+                country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to
+                name a few. Rest assured, you're buying from only the most reliable
+                names in the market. What's more, with Flipkart's Complete Mobile
+                Protection Plan, you will never again find the need to run around
+                service centres. This plan entails you to a number of post-purchase
+                solutions, starting at as low as Rupees 99 only! Broken screens,
+                liquid damage to phone, hardware and software glitches, and
+                replacements - <b>the Flipkart Complete Mobile Protection</b> covers a
+                comprehensive range of post-purchase problems, with door-to-door
+                services. <br /><br />
+                <h2>Electronic Devices and Accessories</h2>
+                When it comes to laptops, we are not far behind. Filter among dozens
+                of super-fast operating systems, hard disk capacity, RAM, lifestyle,
+                screen size and many other criterias for personalized results in a
+                flash. All you students out there, confused about what laptop to get?
+                Our <b>Back To College Store</b> segregates laptops purpose wise
+                (gaming, browsing and research, project work, entertainment, design,
+                multitasking) with recommendations from top brands and industry
+                experts, facilitating a shopping experience that is quicker and
+                simpler.<br /><br />Photography lovers, you couldn't land at a better
+                page than ours. Cutting-edge DSLR cameras, ever reliable
+                point-and-shoot cameras, millennial favourite instant cameras or
+                action cameras for adventure junkies: our range of cameras is as much
+                for beginners as it is for professionals. Canon, Nikon, GoPro, Sony,
+                and Fujifilm are some big names you'll find in our store. Photography
+                lovers, you couldn't land at a better page than ours. Cutting-edge
+                DSLR cameras, ever reliable point-and-shoot cameras, millennial
+                favourite instant cameras or action cameras for adventure junkies: our
+                range of cameras is as much for beginners as it is for professionals.
+                Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find
+                in our store. <br /><br />Turn your home into a theatre with a
+                stunning surround sound system. Choose from our elaborate range of
+                Sony home theatres, JBL soundbars and Philips tower speakers for an
+                experience to remember.<br /><br />How about jazzing up your phone
+                with our quirky designer cases and covers? Our wide-ranging mobile
+                accessories starting from headphones, power banks, memory cards,
+                mobile chargers, to selfie sticks can prove to be ideal travel
+                companions for you and your phone; never again worry about running out
+                of charge or memory on your next vacation.<br /><br />
+                <h2>Large Appliances</h2>
+                Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful
+                washing machines - discover everything you need to run a house under
+                one roof. Our <b>Dependable TV and Appliance Store</b> ensures zero
+                transit damage, with a replacement guarantee if anything goes wrong;
+                delivery and installation as per your convenience and a double
+                warranty (Official Brand Warranty along with an extended Flipkart
+                Warranty) - rest assured, value for money is what is promised and
+                delivered. Shop from market leaders in the country like Samsung, LG,
+                Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi
+                among many others. <br /><br />
+                <h2>Small Home Appliances</h2>
+                Find handy and practical home appliances designed to make your life
+                simpler: electric kettles, OTGs, microwave ovens, sandwich makers,
+                hand blenders, coffee makers, and many more other time-saving
+                appliances that are truly crafted for a quicker lifestyle. Live life
+                king size with these appliances at home.<br /><br />
+                <h2>Lifestyle</h2>
+                Flipkart, <b>'India ka Fashion Capital'</b>, is your one-stop fashion
+                destination for anything and everything you need to look good. Our
+                exhaustive range of Western and Indian wear, summer and winter
+                clothing, formal and casual footwear, bridal and artificial jewellery,
+                long-lasting make-up, grooming tools and accessories are sure to sweep
+                you off your feet. Shop from crowd favourites like Vero Moda, Forever
+                21, Only, Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among
+                dozens of other top-of-the-ladder names. From summer staple maxi
+                dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to
+                street-smart biker jackets, you can rely on us for a wardrobe that is
+                up to date. Explore our in-house brands like Metronaut, Anmi, and
+                Denizen, to name a few, for carefully curated designs that are the
+                talk of the town. Get ready to be spoiled for choice.Festivals, office
+                get-togethers, weddings, brunches, or nightwear - Flipkart will have
+                your back each time.<br /><br />
+                <h2>Home and Furniture</h2>
+                Moving to a new place is never easy, especially if you're buying new
+                furniture. Beds, sofa sets, dining tables, wardrobes, and TV units -
+                it's not easy to set up everything again. With the hundreds of options
+                thrown at you, the ride could be overwhelming. What place is reliable,
+                what furniture will stand the test of time? These are questions you
+                must ask before you choose a store. Well, our
+                <b>Durability Certified Furniture Store</b> has not only curated a
+                range of furniture keeping in mind the modern Indian consumer but
+                furniture that comes with a lab certification, ensuring they last you
+                for up to 10 years. Yes, all our furniture has gone through 35
+                stability and load tests so that you receive only the best-quality
+                furniture. <b>Be FurniSure</b>, always. Names to look out for are
+                Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect
+                Homes. <br /><br />You may have your furniture all set up, but they
+                could end up looking flat and incomplete without complementary decor.
+                Curtains, cushion covers, bed sheets, wall shelves, paintings, floor
+                lamps - find everything that turns a house to an inviting home under
+                one roof at Flipkart. <br /><br />
+                <h2>Baby and Kids</h2>
+                Your kids deserve only the best. From bodysuits, booties, diapers to
+                strollers, if you're an expecting mother or a new mother, you will
+                find everything you need to set sail on a smooth parenting journey
+                with the help of our baby care collection. When it comes to safety,
+                hygiene and comfort, you can rely on us without a second thought.
+                Huggies, Pampers, MamyPoko, and Johnson &amp; Johnson: we host only
+                the most-trusted names in the business for your baby.<br /><br />
+                <h2>Books, Sports and Games</h2>
+                Work hard and no play? We don't believe in that. Get access to
+                best-selling fiction and non-fiction books by your favourite authors,
+                thrilling English and Indian blockbusters, most-wanted gaming
+                consoles, and a tempting range of fitness and sports gadgets and
+                equipment bound to inspire you to get moving. <br /><br />
+                <h2>Grocery/Supermart</h2>
+                Launching into the grocery vertical, Flipkart introduces
+                <b>Supermart</b> that is out to bring everyday essentials close to
+                you. From pulses, spices, dairy, personal and sanitary care, breakfast
+                essentials, health drinks, spreads, ready to cook, grooming to
+                cleaning agents, we are happy to present everything you need to run a
+                house. Now buy Grocery products for as low as 1 Rupee only - our
+                <b>1 Rupee Store</b>
+                presents new products every day for a nominal price of 1 Rupee only.
+                Terms and conditions apply.
             </div>
         </div>
         <div class="footer">
@@ -798,7 +1373,6 @@
                     <a href="/">cancellation & Returns</a>
                     <a href="/">FAQ</a>
                     <a href="/">Report Infringement</a>
-
                 </div>
                 <div class="footer-upper-list">
                     <h6>POLICY</h6>
@@ -814,28 +1388,26 @@
                     <a href="/">Facebook</a>
                     <a href="/">Twitter</a>
                     <a href="/">YouTube</a>
-
                 </div>
                 <div class="footer-upper-list border">
                     <h6>Mail Us:</h6>
-                    <p>Flipkart Internet Private Limited, </p>
-                    <p> Buildings Alyssa, Begonia &amp; </p>
-                    <p> Clove Embassy Tech Village, </p>
-                    <p> Outer Ring Road, Devarabeesanahalli Village, </p>
-                    <p> Bengaluru, 560103, </p>
-                    <p> Karnataka, India</p>
-
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &amp;</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
                 </div>
                 <div class="footer-upper-list">
                     <h6>Registered Office Address</h6>
-                    <p>Flipkart Internet Private Limited, </p>
-                    <p> Buildings Alyssa, Begonia &amp; </p>
-                    <p> Clove Embassy Tech Village, </p>
-                    <p> Outer Ring Road, Devarabeesanahalli Village, </p>
-                    <p> Bengaluru, 560103, </p>
-                    <p> Karnataka, India </p>
-                    <p> CIN : U51109KA2012PTC066107 </p>
-                    <p> Telephone: <a href="/">1800 202 9898</a></p>
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &amp;</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                    <p>CIN : U51109KA2012PTC066107</p>
+                    <p>Telephone: <a href="/">1800 202 9898</a></p>
                 </div>
             </div>
             <div class="footer-lower">
@@ -853,7 +1425,8 @@
                                 d="M15.93 5.614h-2.948V4.14c0-.818-.655-1.473-1.473-1.473H8.56c-.817 0-1.473.655-1.473 1.473v1.474H4.14c-.818 0-1.466.656-1.466 1.474l-.007 8.105c0 .818.655 1.474 1.473 1.474h11.79c.818 0 1.474-.656 1.474-1.474V7.088c0-.818-.656-1.474-1.474-1.474zm-4.421 0H8.56V4.14h2.948v1.474z"
                                 transform="translate(-2 -2)" />
                         </g>
-                    </svg> <span>Sell On Flipkart</span>
+                    </svg>
+                    <span>Sell On Flipkart</span>
                 </div>
                 <div class="footer-lower-list">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
@@ -869,7 +1442,8 @@
                                 d="M10.492 3C6.353 3 3 6.36 3 10.5c0 4.14 3.353 7.5 7.492 7.5C14.64 18 18 14.64 18 10.5 18 6.36 14.64 3 10.492 3zm3.18 12L10.5 13.088 7.327 15l.84-3.607L5.37 8.97l3.69-.315L10.5 5.25l1.44 3.398 3.69.315-2.798 2.422.84 3.615z"
                                 transform="translate(-3 -3)" />
                         </g>
-                    </svg> <span>Advertise</span>
+                    </svg>
+                    <span>Advertise</span>
                 </div>
                 <div class="footer-lower-list">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewbox="0 0 18 17">
@@ -885,7 +1459,8 @@
                                 d="M16.667 5H14.85c.092-.258.15-.542.15-.833a2.497 2.497 0 0 0-4.583-1.375L10 3.35l-.417-.567A2.51 2.51 0 0 0 7.5 1.667a2.497 2.497 0 0 0-2.5 2.5c0 .291.058.575.15.833H3.333c-.925 0-1.658.742-1.658 1.667l-.008 9.166A1.66 1.66 0 0 0 3.333 17.5h13.334a1.66 1.66 0 0 0 1.666-1.667V6.667A1.66 1.66 0 0 0 16.667 5zm0 6.667H3.333v-5h4.234L5.833 9.025l1.35.975 1.984-2.7L10 6.167l.833 1.133 1.984 2.7 1.35-.975-1.734-2.358h4.234v5z"
                                 transform="translate(-1 -1)" />
                         </g>
-                    </svg> <span>Gift Cards</span>
+                    </svg>
+                    <span>Gift Cards</span>
                 </div>
                 <div class="footer-lower-list">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewbox="0 0 15 15">
@@ -901,11 +1476,11 @@
                                 d="M9.5 3C5.36 3 2 6.36 2 10.5 2 14.64 5.36 18 9.5 18c4.14 0 7.5-3.36 7.5-7.5C17 6.36 13.64 3 9.5 3zm.75 12.75h-1.5v-1.5h1.5v1.5zm1.553-5.813l-.676.69c-.54.548-.877.998-.877 2.123h-1.5v-.375c0-.825.338-1.575.877-2.123l.93-.945c.278-.27.443-.645.443-1.057 0-.825-.675-1.5-1.5-1.5S8 7.425 8 8.25H6.5a3 3 0 1 1 6 0c0 .66-.27 1.26-.697 1.688z"
                                 transform="translate(-2 -3)" />
                         </g>
-                    </svg> <span>Help Center</span>
+                    </svg>
+                    <span>Help Center</span>
                 </div>
                 <div class="footer-lower-list">
-                    <span>
-                        © 2007-2021 Flipkart.com</span>
+                    <span> © 2007-2021 Flipkart.com</span>
                 </div>
                 <div class="footer-lower-list">
                     <svg xmlns="http://www.w3.org/2000/svg" width="377" height="18" viewbox="0 0 377 18">
@@ -1022,7 +1597,7 @@
             </div>
         </div>
     </section>
-
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

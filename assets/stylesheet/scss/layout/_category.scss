@@ -16,6 +16,7 @@
       &-items {
         padding: 12px 0;
         @include flex;
+        position: relative;
         img {
           width: 64px;
           height: 64px;
@@ -45,6 +46,7 @@
             }
           }
         }
+
         &:hover {
           cursor: pointer;
         }
@@ -52,5 +54,62 @@
     }
   }
 }
+.list-item-hover {
+  display: none;
+  position: absolute;
+  top: 25px;
+  transform: translateX(-40%);
+  background-color: $white;
+  width: 216px;
+  max-height: 550px;
+  box-shadow: 0 4px 16px 0 rgb(0 0 0 / 20%);
+  z-index: 5;
 
+  .svg-arrow {
+    fill: $white;
+    width: 24px;
+    height: 16px;
+    position: absolute;
+    top: -11px;
+    left: 94%;
+  }
+  ul li {
+    height: 18px;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 14px;
+    .dropdown {
+      display: flex;
+      align-items: center;
+      .dropdown-new {
+        font-weight: 600;
+      }
+    }
+    &:hover {
+      background-color: $gray;
+    }
+  }
+  &:hover {
+    display: block;
+  }
+}
+.categories-container-list-items:hover .list-item-hover {
+  display: block;
+}
+.categories-container-list-items:hover .svg-rotate {
+  transform: rotate(90deg);
+}
+.blue:hover {
+  color: $sky-blue;
+}
+.nested {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  box-shadow: none;
+}
+.parent {
+  top: 105px;
+  right: -50px;
+}
 /*category section css ends*/
