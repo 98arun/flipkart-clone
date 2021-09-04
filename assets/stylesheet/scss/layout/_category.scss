@@ -27,12 +27,15 @@
           color: $black;
           &:hover {
             color: $sky-blue;
+            cursor: pointer;
           }
           &:hover .svg-rotate path {
             fill: $sky-blue;
+            cursor: pointer;
           }
           &:hover .svg-rotate {
             transform: rotate(90deg);
+            cursor: pointer;
           }
           .svg-rotate {
             margin-left: 10px;

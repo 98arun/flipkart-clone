@@ -41,8 +41,16 @@ header {
     .right-nav {
       @include flexbox;
       width: 20%;
+      .hover-btn2,
+      .hover-btn1 {
+        &:hover .svg-rotate {
+          transform: rotate(90deg);
+        }
+      }
       .list-items {
         position: relative;
+        z-index: 5;
+
         .list-item-hover {
           display: none;
           position: absolute;
@@ -52,6 +60,7 @@ header {
           width: 216px;
           max-height: 550px;
           box-shadow: 0 4px 16px 0 rgb(0 0 0 / 20%);
+          z-index: 5;
 
           .svg-arrow {
             fill: $white;

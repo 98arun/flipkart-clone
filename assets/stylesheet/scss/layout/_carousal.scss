@@ -3,13 +3,14 @@
 
 .carousal {
   width: 100%;
-  margin-top: 56px;
+  position: absolute;
+  top: 168px;
   background-color: #f0f0f0;
-  overflow: hidden;
-  z-index: -1;
+  z-index: -2;
   &-container {
     max-width: 1680px;
-    margin: 20px auto;
+    margin: 0 auto;
     overflow: hidden;
+    padding: 20px 0;
   }
 }
