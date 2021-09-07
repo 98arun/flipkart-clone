@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# Flipkar(Clone)
-=======
+
 # Flipkart(Clone)
 This is a clone Flipkart web application written in HTML, CSS,SASS and JavaScript, with no framework used.
 ## [For a Live Demo-Click Here](https://98arun.github.io/flipkart-clone/)
@@ -11,4 +9,3 @@ This is a clone Flipkart web application written in HTML, CSS,SASS and JavaScrip
 
 
 
->>>>>>> e4ad5ce394df83bb4b030a47c1fa7fbe39379037
