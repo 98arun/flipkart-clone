@@ -17,8 +17,7 @@ let hide = document.getElementsByClassName("hide");
 let hidden = document.getElementsByClassName("hidden");
 newUser.addEventListener("click", (e) => {
   e.preventDefault(e);
-  // let hidde = document.getElementsByClassName("hidden");
-  // console.log("clicked", hidde);
+
   hidden[0].style.display = "none";
   hidden[1].style.display = "none";
   hidden[2].style.display = "none";
@@ -32,17 +31,6 @@ newUser.addEventListener("click", (e) => {
   hide[1].style.display = "block";
   hide[2].style.display = "block";
   hide[3].style.display = "block";
-
-  // Array.from(hidde).forEach((element) => {
-  //   console.log("clicked", element);
-  //   hidde[0].style.display = "hidden";
-  // hide.style.display = "block";
-  // });
-  // for (let item of hidde) {
-  //   console.log(item);
-  // }
-  // hidden.style.display = "hidden";
-  // hide.style.display = "block";
 });
 existingUser.addEventListener("click", (e) => {
   e.preventDefault(e);
@@ -59,9 +47,4 @@ existingUser.addEventListener("click", (e) => {
   hide[1].style.display = "none";
   hide[2].style.display = "none";
   hide[3].style.display = "none";
-  // hidden.style.display = "block";
-  // hide.style.display = "hidden";
 });
-
-// console.log(hide);
-// console.log(hidden);
