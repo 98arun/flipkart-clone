@@ -290,7 +290,7 @@ textarea {
 
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
+ * the UA stylesheets.
  */
 button,
 input {
@@ -699,7 +699,7 @@ header nav .right-nav .cart svg {
 }
 
 .parent {
-  top: 105px;
+  top: 105px !important;
   right: -50px;
 }
 
@@ -1148,8 +1148,7 @@ header nav .right-nav .cart svg {
 }
 
 .or {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 15px;
   font-size: 15px;
   color: #878787;
@@ -1163,7 +1162,8 @@ header nav .right-nav .cart svg {
   padding-bottom: 15px;
   position: relative;
   top: 25%;
-  left: 15%;
+  width: 100%;
+  text-align: center;
 }
 
 .hide {
@@ -1171,7 +1171,7 @@ header nav .right-nav .cart svg {
 }
 
 .hidden {
-  display: inline;
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

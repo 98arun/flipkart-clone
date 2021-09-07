@@ -326,8 +326,7 @@
   background-color: #fb641b;
 }
 .or {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 15px;
   font-size: 15px;
   color: #878787;
@@ -340,11 +339,12 @@
   padding-bottom: 15px;
   position: relative;
   top: 25%;
-  left: 15%;
+  width: 100%;
+  text-align: center;
 }
 .hide {
   display: none;
 }
 .hidden {
-  display: inline;
+  display: block;
 }
